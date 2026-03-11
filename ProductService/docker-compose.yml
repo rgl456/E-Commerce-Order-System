@@ -1,0 +1,13 @@
+services:
+  mysql-product-db:
+    image: mysql:8.0
+    container_name: mysql-product-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: product_db
+      MYSQL_USERNAME: product_user
+      MYSQL_PASSWORD: product_pass
+    ports:
+        - "3307:3306"
+    volumes:
+      - mysql-product-data:/var/lib/mysql

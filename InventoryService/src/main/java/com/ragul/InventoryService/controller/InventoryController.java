@@ -2,6 +2,7 @@ package com.ragul.InventoryService.controller;
 
 import com.ragul.InventoryService.dto.InventoryRequest;
 import com.ragul.InventoryService.dto.InventoryResponse;
+import com.ragul.InventoryService.dto.StockReservationRequest;
 import com.ragul.InventoryService.service.InventoryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -27,6 +28,19 @@ public class InventoryController {
         return ResponseEntity.ok(inventoryService.getInventoryByProductId(productId));
     }
 
+    @PostMapping("/reserve")
+    public ResponseEntity<InventoryResponse> reserveStock(@Valid @RequestBody StockReservationRequest request) {
+        return ResponseEntity.ok(inventoryService.reserveStock(request));
+    }
 
+    @PostMapping("/release")
+    public ResponseEntity<InventoryResponse> releaseReservation(@Valid @RequestBody StockReservationRequest request) {
+        return ResponseEntity.ok(inventoryService.releaseReservation(request));
+    }
+
+    @PostMapping("/confirm")
+    public ResponseEntity<InventoryResponse> confirmDeduction(@Valid @RequestBody StockReservationRequest request) {
+        return ResponseEntity.ok(inventoryService.confirmDeduction(request));
+    }
 
 }

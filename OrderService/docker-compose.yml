@@ -1,0 +1,11 @@
+services:
+  mysql-order-db:
+    image: mysql:8.0
+    container_name: mysql-order-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3309:3306"

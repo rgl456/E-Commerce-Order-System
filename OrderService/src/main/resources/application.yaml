@@ -1,3 +1,23 @@
+server:
+  port: 8084
+
 spring:
   application:
-    name: OrderService
+    name: order-service
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+product-service:
+  url: http://localhost:8083
+
+inventory-service:
+  url: http://localhost:8085

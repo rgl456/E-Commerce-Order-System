@@ -51,7 +51,7 @@ public class OrderService {
                     .orElseThrow(() -> new OrderCreationException(
                             "Product not found: " + itemRequest.productId()
                     ));
-            if(!"ACTIVE".equals((product.getStatus())){
+            if(!"ACTIVE".equals((product.getStatus()))){
                 throw new OrderCreationException(
                         "Product is not available: " + itemRequest.productId()
                 );
@@ -108,7 +108,7 @@ public class OrderService {
         order.setStatus(OrderStatus.CONFIRMED);
 
         Order savedOrder = orderRepository.save(order);
-        mapToResponse(savedOrder);
+        return mapToResponse(savedOrder);
     }
 
 

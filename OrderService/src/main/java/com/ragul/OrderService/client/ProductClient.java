@@ -1,6 +1,7 @@
 package com.ragul.OrderService.client;
 
 import com.ragul.OrderService.dto.ProductResponse;
+import com.ragul.OrderService.exception.ServiceUnavailableException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

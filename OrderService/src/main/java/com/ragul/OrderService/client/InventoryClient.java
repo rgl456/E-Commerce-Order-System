@@ -1,6 +1,8 @@
 package com.ragul.OrderService.client;
 
 import com.ragul.OrderService.dto.StockReservationRequest;
+import com.ragul.OrderService.exception.InsufficientStockException;
+import com.ragul.OrderService.exception.ServiceUnavailableException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -43,6 +45,5 @@ public class InventoryClient {
                     request.getProductId(), request.getOrderId(), e);
         }
     }
-
 
 }

@@ -12,6 +12,6 @@ import java.util.Optional;
 public interface ProductClient {
 
     @GetMapping("/api/v1/products/{productId}")
-    Optional<ProductResponse> getProductById(@PathVariable("productId") Long productId);
+    ProductResponse getProductById(@PathVariable("productId") Long productId);
 
 }

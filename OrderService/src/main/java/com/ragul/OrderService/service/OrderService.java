@@ -45,17 +45,28 @@ public class OrderService {
         List<ProductResponse> verifiedProducts = new ArrayList<>();
 
         for(OrderItemRequest itemRequest : request.items()){
-            ProductResponse product = productClient.getProductById(itemRequest.productId())
-                    .orElseThrow(() -> new OrderCreationException(
-                            "Product not found: " + itemRequest.productId()
-                    ));
-            if(!"ACTIVE".equals((product.getStatus()))){
+            try {
+                ProductResponse product = productClient.getProductById(
+                        itemRequest.productId()
+                );
+
+                if (!"ACTIVE".equals(product.getStatus())) {
+                    throw new OrderCreationException(
+                            "Product is not available: " + itemRequest.productId()
+                    );
+                }
+                verifiedProducts.add(product);
+            }
+            catch (ResourceNotFoundException e) {
                 throw new OrderCreationException(
-                        "Product is not available: " + itemRequest.productId()
+                        "Product not found: " + itemRequest.productId()
                 );
             }
-
-            verifiedProducts.add(product);
+            catch (ServiceUnavailableException e) {
+                throw new OrderCreationException(
+                        "Product Service unavailable — please try again"
+                );
+            }
         }
 
         List<StockReservationRequest> reservationsMade = new ArrayList<>();
@@ -95,7 +106,12 @@ public class OrderService {
         catch (InsufficientStockException | ServiceUnavailableException e){
 
             for (StockReservationRequest made : reservationsMade) {
-                inventoryClient.releaseReservation(made);
+                try {
+                    inventoryClient.releaseReservation(made);
+                } catch (Exception releaseEx) {
+                    log.error("CRITICAL: Failed to release reservation for product {}",
+                            made.getProductId(), releaseEx);
+                }
             }
 
             throw new OrderCreationException("Order failed: " + e.getMessage());
@@ -143,11 +159,16 @@ public class OrderService {
         }
 
         for (OrderItem item : order.getItems()) {
-            inventoryClient.releaseReservation(StockReservationRequest.builder()
-                    .productId(item.getProductId())
-                    .quantity(item.getQuantity())
-                    .orderId(order.getOrderNumber())
-                    .build());
+            try {
+                inventoryClient.releaseReservation(StockReservationRequest.builder()
+                        .productId(item.getProductId())
+                        .quantity(item.getQuantity())
+                        .orderId(order.getOrderNumber())
+                        .build());
+            } catch (Exception e) {
+                log.error("Failed to release reservation during cancel for product {}",
+                        item.getProductId(), e);
+            }
         }
 
         order.setStatus(OrderStatus.CANCELLED);

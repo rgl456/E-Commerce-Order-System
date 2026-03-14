@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface InventoryClient {
 
     @PostMapping("/api/v1/inventory/reserve")
-    InventoryResponse stockReserve(@RequestBody StockReservationRequest request);
+    void stockReserve(@RequestBody StockReservationRequest request);
 
     @PostMapping("/api/v1/inventory/release")
-    InventoryResponse releaseReservation(@RequestBody StockReservationRequest request);
+    void releaseReservation(@RequestBody StockReservationRequest request);
 
 }

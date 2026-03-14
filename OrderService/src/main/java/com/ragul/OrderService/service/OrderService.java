@@ -9,10 +9,8 @@ import com.ragul.OrderService.model.Order;
 import com.ragul.OrderService.model.OrderItem;
 import com.ragul.OrderService.model.OrderStatus;
 import com.ragul.OrderService.repository.OrderRepository;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

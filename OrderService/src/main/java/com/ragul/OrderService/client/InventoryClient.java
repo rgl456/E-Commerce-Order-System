@@ -1,49 +1,18 @@
 package com.ragul.OrderService.client;
 
+import com.ragul.OrderService.config.FeignConfig;
 import com.ragul.OrderService.dto.StockReservationRequest;
-import com.ragul.OrderService.exception.InsufficientStockException;
-import com.ragul.OrderService.exception.ServiceUnavailableException;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.ResourceAccessException;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
-@Component
-@Slf4j
-@RequiredArgsConstructor
-public class InventoryClient {
+@FeignClient(name = "inventory-service", configuration = FeignConfig.class)
+public interface InventoryClient {
 
-    private final RestTemplate restTemplate;
+    @PostMapping("/api/v1/inventory/reserve")
+    InventoryResponse stockReserve(@RequestBody StockReservationRequest request);
 
-    @Value("${inventory-service.url}")
-    private String inventoryServiceUrl;
-
-    public void stockReserve(StockReservationRequest request){
-        try{
-            String url = inventoryServiceUrl + "/api/v1/inventory/reserve";
-            restTemplate.postForObject(url, request, Object.class);
-        }
-        catch (HttpClientErrorException.UnprocessableEntity e) {
-            throw new InsufficientStockException(
-                    "Insufficient stock for product: " + request.getProductId()
-            );
-        } catch (ResourceAccessException e) {
-            throw new ServiceUnavailableException("Inventory Service is currently unavailable");
-        }
-    }
-
-    public void releaseReservation(StockReservationRequest request) {
-        try {
-            String url = inventoryServiceUrl + "/api/v1/inventory/release";
-            restTemplate.postForObject(url, request, Object.class);
-        } catch (Exception e) {
-            log.error("CRITICAL: Failed to release reservation for product {}. " +
-                            "Manual reconciliation required. OrderId: {}",
-                    request.getProductId(), request.getOrderId(), e);
-        }
-    }
+    @PostMapping("/api/v1/inventory/release")
+    InventoryResponse releaseReservation(@RequestBody StockReservationRequest request);
 
 }

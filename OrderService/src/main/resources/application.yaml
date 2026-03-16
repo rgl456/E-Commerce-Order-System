@@ -9,3 +9,91 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}:${random.value}
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      inventory-service:
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        slow-call-duration-threshold: 3s
+        slow-call-rate-threshold: 80
+        record-exceptions:
+          - java.util.concurrent.TimeoutException
+          - io.github.resilience4j.circuitbreaker.CallNotPermittedException
+          - feign.RetryableException
+          - java.net.ConnectException
+        ignore-exceptions:
+          - com.ragul.OrderService.config.FeignConfig.ResourceNotFoundException
+          - com.ragul.OrderService.config.FeignConfig.BusinessException
+
+      product-service:
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        slow-call-duration-threshold: 2s
+        slow-call-rate-threshold: 80
+        record-exceptions:
+          - java.util.concurrent.TimeoutException
+          - java.net.ConnectException
+        ignore-exceptions:
+          - com.ragul.OrderService.config.FeignConfig.ResourceNotFoundException
+
+  retry:
+    instances:
+      inventory-service:
+        max-attempts: 3
+        wait-duration: 500ms
+        exponential-backoff-multiplier: 2
+        enable-exponential-backoff: true
+        retry-exceptions:
+          - java.net.ConnectException
+          - java.util.concurrent.TimeoutException
+          - feign.RetryableException
+        ignore-exceptions:
+          - com.ragul.OrderService.config.FeignConfig.ResourceNotFoundException
+          - com.ragul.OrderService.config.FeignConfig.BusinessException
+
+      product-service:
+        max-attempts: 3
+        wait-duration: 300ms
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+        retry-exceptions:
+          - java.net.ConnectException
+          - java.util.concurrent.TimeoutException
+
+  timelimiter:
+    instances:
+      inventory-service:
+        timeout-duration: 3s
+        cancel-running-future: true
+
+      product-service:
+        timeout-duration: 2s
+        cancel-running-future: true
+
+
+  bulkhead:
+    instances:
+      inventory-service:
+        max-concurrent-calls: 10
+        max-wait-duration: 0ms
+
+      product-service:
+        max-concurrent-calls: 15
+        max-wait-duration: 0ms
+
+  ratelimiter:
+    instances:
+      order-creation:
+        limit-for-period: 10
+        limit-refresh-period: 1s
+        timeout-duration: 0ms
+
+

@@ -9,6 +9,8 @@ import com.ragul.OrderService.model.Order;
 import com.ragul.OrderService.model.OrderItem;
 import com.ragul.OrderService.model.OrderStatus;
 import com.ragul.OrderService.repository.OrderRepository;
+import io.github.resilience4j.ratelimiter.RequestNotPermitted;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -17,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+import java.util.UUID;
 
 import static com.ragul.OrderService.mapper.OrderMapper.mapToResponse;
 
@@ -31,6 +33,7 @@ public class OrderService {
     private final InventoryClient inventoryClient;
 
     @Transactional
+    @RateLimiter(name = "order-creation", fallbackMethod = "rateLimitFallback")
     public OrderResponse createOrder(OrderRequest request) {
 
         Order order = Order.builder()
@@ -79,7 +82,7 @@ public class OrderService {
                 StockReservationRequest reservationRequest = StockReservationRequest.builder()
                         .orderId(order.getOrderNumber() != null ?
                                 order.getOrderNumber() :
-                                "ORD-"+request.customerId()+new Random().nextInt(1000))
+                                "ORD-" + UUID.randomUUID())
                         .productId(orderItemRequest.productId())
                         .quantity(orderItemRequest.quantity())
                         .build();
@@ -116,7 +119,7 @@ public class OrderService {
 
             throw new OrderCreationException("Order failed: " + e.getMessage());
         }
-
+        order.setOrderNumber("ORD-" + UUID.randomUUID());
         order.setItems(orderItems);
         order.setTotalAmount(totalAmount);
         order.setStatus(OrderStatus.CONFIRMED);
@@ -125,6 +128,13 @@ public class OrderService {
         return mapToResponse(savedOrder);
     }
 
+    public OrderResponse rateLimitFallback(OrderRequest request, RequestNotPermitted e) {
+        log.warn("Rate limit exceeded for order creation. Customer: {}",
+                request.customerId());
+        throw new RateLimitExceededException(
+                "Too many order requests. Please wait a moment and try again."
+        );
+    }
 
     @Transactional(readOnly = true)
     public OrderResponse getOrderById(Long id) {

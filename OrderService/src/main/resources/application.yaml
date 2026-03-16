@@ -27,8 +27,8 @@ resilience4j:
           - feign.RetryableException
           - java.net.ConnectException
         ignore-exceptions:
-          - com.ragul.OrderService.config.FeignConfig.ResourceNotFoundException
-          - com.ragul.OrderService.config.FeignConfig.BusinessException
+          - com.ragul.OrderService.exception.ResourceNotFoundException
+          - com.ragul.OrderService.exception.BusinessException
 
       product-service:
         sliding-window-size: 10
@@ -42,7 +42,7 @@ resilience4j:
           - java.util.concurrent.TimeoutException
           - java.net.ConnectException
         ignore-exceptions:
-          - com.ragul.OrderService.config.FeignConfig.ResourceNotFoundException
+          - com.ragul.OrderService.exception.ResourceNotFoundException
 
   retry:
     instances:
@@ -56,8 +56,8 @@ resilience4j:
           - java.util.concurrent.TimeoutException
           - feign.RetryableException
         ignore-exceptions:
-          - com.ragul.OrderService.config.FeignConfig.ResourceNotFoundException
-          - com.ragul.OrderService.config.FeignConfig.BusinessException
+          - com.ragul.OrderService.exception.ResourceNotFoundException
+          - com.ragul.OrderService.exception.BusinessException
 
       product-service:
         max-attempts: 3

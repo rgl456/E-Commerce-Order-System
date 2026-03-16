@@ -1,6 +1,8 @@
 package com.ragul.OrderService.exception;
 
 import com.ragul.OrderService.dto.ErrorResponse;
+import io.github.resilience4j.circuitbreaker.CallNotPermittedException;
+import io.github.resilience4j.ratelimiter.RequestNotPermitted;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -24,6 +26,24 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleBadRequest(RuntimeException ex) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                 .body(new ErrorResponse(400, ex.getMessage(), LocalDateTime.now()));
+    }
+
+    @ExceptionHandler(CallNotPermittedException.class)
+    public ResponseEntity<ErrorResponse> handleCircuitOpen(CallNotPermittedException ex) {
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+                .body(new ErrorResponse(503,
+                        "Service temporarily unavailable. Please try again later.",
+                        LocalDateTime.now()));
+    }
+
+    @ExceptionHandler({RequestNotPermitted.class, RateLimitExceededException.class})
+    public ResponseEntity<ErrorResponse> handleRateLimit(RuntimeException ex) {
+        return ResponseEntity
+                .status(HttpStatus.TOO_MANY_REQUESTS)   // 429
+                .header("Retry-After", "1")
+                .body(new ErrorResponse(429,
+                        "Too many requests. Please slow down.",
+                        LocalDateTime.now()));
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

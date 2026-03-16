@@ -39,6 +39,39 @@ spring:
               args:
                 name: orderServiceCB
                 fallbackUri: forward:/fallback/order
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 20     # tokens added per second
+                redis-rate-limiter.burstCapacity: 40     # max burst (token bucket max)
+                redis-rate-limiter.requestedTokens: 1    # tokens per request
+                # Identify clients by IP address
+                key-resolver: "#{@ipKeyResolver}"
+
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      orderServiceCB:
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 15s
+        permitted-number-of-calls-in-half-open-state: 3
+      productServiceCB:
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+      inventoryServiceCB:
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+  timelimiter:
+    instances:
+      orderServiceCB:
+        timeout-duration: 5s
+      productServiceCB:
+        timeout-duration: 3s
+      inventoryServiceCB:
+        timeout-duration: 3s
 
 eureka:
   client:

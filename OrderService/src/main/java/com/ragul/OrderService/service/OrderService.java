@@ -37,6 +37,7 @@ public class OrderService {
     public OrderResponse createOrder(OrderRequest request) {
 
         Order order = Order.builder()
+                .orderNumber("ORD-" + UUID.randomUUID())
                 .customerId(request.customerId())
                 .status(OrderStatus.PENDING)
                 .totalAmount(BigDecimal.ZERO)
@@ -48,28 +49,14 @@ public class OrderService {
         List<ProductResponse> verifiedProducts = new ArrayList<>();
 
         for(OrderItemRequest itemRequest : request.items()){
-            try {
-                ProductResponse product = productClient.getProductById(
-                        itemRequest.productId()
-                );
+            ProductResponse product = productClient.getProductById(itemRequest.productId());
 
-                if (!"ACTIVE".equals(product.getStatus())) {
-                    throw new OrderCreationException(
-                            "Product is not available: " + itemRequest.productId()
-                    );
-                }
-                verifiedProducts.add(product);
-            }
-            catch (ResourceNotFoundException e) {
+            if (!"ACTIVE".equals(product.getStatus())) {
                 throw new OrderCreationException(
-                        "Product not found: " + itemRequest.productId()
+                        "Product is not available: " + itemRequest.productId()
                 );
             }
-            catch (ServiceUnavailableException e) {
-                throw new OrderCreationException(
-                        "Product Service unavailable — please try again"
-                );
-            }
+            verifiedProducts.add(product);
         }
 
         List<StockReservationRequest> reservationsMade = new ArrayList<>();
@@ -119,7 +106,7 @@ public class OrderService {
 
             throw new OrderCreationException("Order failed: " + e.getMessage());
         }
-        order.setOrderNumber("ORD-" + UUID.randomUUID());
+
         order.setItems(orderItems);
         order.setTotalAmount(totalAmount);
         order.setStatus(OrderStatus.CONFIRMED);

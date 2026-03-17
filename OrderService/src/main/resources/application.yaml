@@ -96,4 +96,3 @@ resilience4j:
         limit-refresh-period: 1s
         timeout-duration: 0ms
 
-

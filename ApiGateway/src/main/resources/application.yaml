@@ -7,9 +7,7 @@ spring:
 
   cloud:
     gateway:
-
       routes:
-
         - id: product-service
           uri: lb://product-service
           predicates:
@@ -46,7 +44,6 @@ spring:
                 redis-rate-limiter.requestedTokens: 1    # tokens per request
                 # Identify clients by IP address
                 key-resolver: "#{@ipKeyResolver}"
-
 
 resilience4j:
   circuitbreaker:

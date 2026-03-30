@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <springProperty scope="context" name="inventory-service"
+                    source="spring.application.name"/>
+
+    <!-- ── CONSOLE APPENDER (for local dev — human readable) ─────────────── -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level [%X{traceId},%X{spanId}] %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- ── LOGSTASH APPENDER (sends JSON to ELK) ─────────────────────────── -->
+    <!--
+        LogstashTcpSocketAppender sends each log event as a JSON object
+        to Logstash over TCP. The JSON includes all MDC fields — including
+        traceId and spanId that Micrometer Tracing puts there automatically.
+
+        This JSON object in Elasticsearch lets you:
+        1. Search all logs by traceId to see the full request journey
+        2. Filter by service, log level, or any custom field
+        3. Click a Kibana log line and jump to the Zipkin trace
+    -->
+    <appender name="LOGSTASH"
+              class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>localhost:5000</destination>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <!-- Embed the service name in every log event -->
+            <customFields>{"service_name":"${inventory-service}"}</customFields>
+            <!-- Include MDC fields (traceId, spanId) as top-level JSON fields -->
+            <includeMdcKeyName>traceId</includeMdcKeyName>
+            <includeMdcKeyName>spanId</includeMdcKeyName>
+        </encoder>
+        <connectionStrategy>
+            <!-- If Logstash is down, don't block the service — skip logging -->
+            <roundRobin>
+                <connectionTTL>5 minutes</connectionTTL>
+            </roundRobin>
+        </connectionStrategy>
+    </appender>
+
+    <!-- ── ASYNC WRAPPER ─────────────────────────────────────────────────── -->
+    <!--
+        Never log synchronously to a remote destination.
+        If Logstash is slow, synchronous logging would slow down your service.
+        AsyncAppender puts log events in a queue and sends them on a background thread.
+    -->
+    <appender name="ASYNC_LOGSTASH"
+              class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="LOGSTASH"/>
+        <queueSize>512</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+        <!-- Don't include caller data — expensive to compute -->
+        <includeCallerData>false</includeCallerData>
+    </appender>
+
+    <!-- ── ROOT LOGGER ───────────────────────────────────────────────────── -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="ASYNC_LOGSTASH"/>
+    </root>
+
+    <!-- Service-specific loggers -->
+    <logger name="com.example" level="DEBUG"/>
+    <logger name="org.springframework.cloud.openfeign" level="DEBUG"/>
+
+</configuration>

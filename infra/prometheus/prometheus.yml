@@ -1,0 +1,45 @@
+global:
+  scrape_interval: 15s      # collect metrics every 15 seconds
+  evaluation_interval: 15s  # evaluate rules every 15 seconds
+
+rule_files:
+  - "alert_rules.yml"       # alerting rules (created below)
+
+scrape_configs:
+
+  # Prometheus scrapes itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # ── Microservices ──────────────────────────────────────────────────────────
+  # Prometheus calls /actuator/prometheus on each service every 15s
+  # and stores all the metrics it finds
+
+  - job_name: 'api-gateway'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8080']
+        labels:
+          service: 'api-gateway'
+
+  - job_name: 'order-service'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8084']
+        labels:
+          service: 'order-service'
+
+  - job_name: 'product-service'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8083']
+        labels:
+          service: 'product-service'
+
+  - job_name: 'inventory-service'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8085']
+        labels:
+          service: 'inventory-service'

@@ -96,3 +96,52 @@ resilience4j:
         limit-refresh-period: 1s
         timeout-duration: 0ms
 
+management:
+  endpoints:
+    web:
+      exposure:
+        # expose prometheus endpoint so Prometheus can scrape metrics
+        include: health, info, metrics, prometheus, circuitbreakers
+  metrics:
+    # Tag every metric with the service name
+    # In Grafana: filter by service="order-service"
+    tags:
+      application: ${spring.application.name}
+    distribution:
+      # Track latency percentiles for HTTP requests
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+      # Pre-compute p50, p95, p99 percentiles
+      percentiles:
+        http:
+          server:
+            requests: 0.5, 0.95, 0.99
+
+  tracing:
+    # Sampling rate: 1.0 = trace every request
+    # In production use 0.1 (10%) or lower to reduce overhead
+    # For development, 1.0 is fine
+    sampling:
+      probability: 1.0
+
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+
+# Logging — include trace/span IDs in every log line
+logging:
+  pattern:
+    # %X{traceId} and %X{spanId} are automatically populated by Micrometer Tracing
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%X{traceId},%X{spanId}] %logger{36} - %msg%n"
+  level:
+    com.example: DEBUG
+    io.micrometer: INFO

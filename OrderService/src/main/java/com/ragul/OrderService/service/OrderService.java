@@ -11,6 +11,9 @@ import com.ragul.OrderService.model.OrderStatus;
 import com.ragul.OrderService.repository.OrderRepository;
 import io.github.resilience4j.ratelimiter.RequestNotPermitted;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.micrometer.core.annotation.Timed;
+import io.micrometer.core.instrument.*;
+import io.micrometer.observation.annotation.Observed;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -20,6 +23,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.ragul.OrderService.mapper.OrderMapper.mapToResponse;
 
@@ -32,9 +36,15 @@ public class OrderService {
     private final ProductClient productClient;
     private final InventoryClient inventoryClient;
 
+
     @Transactional
     @RateLimiter(name = "order-creation", fallbackMethod = "rateLimitFallback")
+    @Observed(name = "order.creation",
+            contextualName = "creating-order",
+            lowCardinalityKeyValues = {"service", "order-service"})
     public OrderResponse createOrder(OrderRequest request) {
+
+        log.info("Creating order for customer {}", request.customerId());
 
         Order order = Order.builder()
                 .orderNumber("ORD-" + UUID.randomUUID())
@@ -112,6 +122,9 @@ public class OrderService {
         order.setStatus(OrderStatus.CONFIRMED);
 
         Order savedOrder = orderRepository.save(order);
+
+        log.info("Creating order for customer {}", request.customerId());
+
         return mapToResponse(savedOrder);
     }
 

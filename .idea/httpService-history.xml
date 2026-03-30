@@ -6,1057 +6,1057 @@
         <entry key="0">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="0" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:41,&quot;orderNumber&quot;:&quot;ORD-8feee532-a7d0-4d23-b2fd-a8faa3ad384d&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:39.821042&quot;}" />
-              <option name="time" value="2026-03-16 16:06:40" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:40:50" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="1">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="1" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:42,&quot;orderNumber&quot;:&quot;ORD-1436d7e6-c9ae-46b6-955f-0bbc2637804a&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:39.987752&quot;}" />
-              <option name="time" value="2026-03-16 16:06:40" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:34" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="2">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="2" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:43,&quot;orderNumber&quot;:&quot;ORD-3a29fe4f-b7ab-44da-9e83-8e3b53bdb79b&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:40.114718&quot;}" />
-              <option name="time" value="2026-03-16 16:06:40" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:34" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="3">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="3" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:44,&quot;orderNumber&quot;:&quot;ORD-49a90bf4-753d-4d7d-ac57-082c90a25d61&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:40.237957&quot;}" />
-              <option name="time" value="2026-03-16 16:06:40" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:35" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="4">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="4" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:45,&quot;orderNumber&quot;:&quot;ORD-2a3edd93-3a9d-492e-984c-259a9fee4394&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:40.367994&quot;}" />
-              <option name="time" value="2026-03-16 16:06:40" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:35" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="5">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="5" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:46,&quot;orderNumber&quot;:&quot;ORD-c6780e04-a8cc-461b-9bfe-c0cb406ae151&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:40.496815&quot;}" />
-              <option name="time" value="2026-03-16 16:06:40" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:35" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="6">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="6" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:47,&quot;orderNumber&quot;:&quot;ORD-37f6fdf1-44d2-4be8-97a8-35fe6103dfec&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:40.614539&quot;}" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:35" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="7">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="7" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:48,&quot;orderNumber&quot;:&quot;ORD-b183f99b-c9ba-47a8-a7e0-e34c510d4c67&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:40.756934&quot;}" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:35" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="8">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="8" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:40 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="9">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="9" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="10">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="10" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="11">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="11" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="12">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="12" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="13">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="13" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:41" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="14">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="14" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:36" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="15">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="15" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:37" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="16">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="16" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:37" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="17">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="17" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:41 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:37" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="18">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="18" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:37" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="19">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="19" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:38" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="20">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="20" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:38" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="21">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="21" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:38" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="22">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="22" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:38" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="23">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="23" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:42" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:38" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="24">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="24" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:38" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="25">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="25" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:42 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:39" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="26">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="26" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:39" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="27">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="27" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:39" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="28">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="28" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:39" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="29">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="29" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:39" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="30">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="30" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:43" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:40" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="31">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="31" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:44" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:40" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="32">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="32" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:43 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:44" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:40" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="33">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="33" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:44 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:44" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:40" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="34">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="34" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:44 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:44" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:40" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="35">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="35" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:44 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:44" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:41" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="36">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="36" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:06:44 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:06:44" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:41" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="37">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="37" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Mon Mar 16 16:07:13 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
-              <option name="time" value="2026-03-16 16:07:13" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:41" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="38">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="38" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:29,&quot;orderNumber&quot;:&quot;ORD-ca4f8036-e9ff-4463-93a9-09a9e9a59e66&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:21.784145&quot;}" />
-              <option name="time" value="2026-03-16 16:06:22" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:41" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="39">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="39" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:30,&quot;orderNumber&quot;:&quot;ORD-ee1d305e-551f-4e53-8003-40f0e83db589&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:22.087748&quot;}" />
-              <option name="time" value="2026-03-16 16:06:22" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:41" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="40">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="40" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:31,&quot;orderNumber&quot;:&quot;ORD-1f1ba0ae-6d71-4167-8d0e-7a94d8c7cd1c&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:22.240104&quot;}" />
-              <option name="time" value="2026-03-16 16:06:22" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:41:41" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="41">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="41" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:32,&quot;orderNumber&quot;:&quot;ORD-96198867-4534-440f-b0a9-d8d1247b142e&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:22.41979&quot;}" />
-              <option name="time" value="2026-03-16 16:06:22" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:42:59" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="42">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1072,8 +1072,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:33,&quot;orderNumber&quot;:&quot;ORD-9cb3987d-b9d7-4cd4-8dae-b80a92dfa9e1&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:22.555265&quot;}" />
-              <option name="time" value="2026-03-16 16:06:22" />
+              <option name="res" value="{&quot;id&quot;:77,&quot;orderNumber&quot;:&quot;ORD-6e2012a3-6ed5-478c-a414-bd1c6a9124c7&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:07.728324&quot;}" />
+              <option name="time" value="2026-03-25 09:35:08" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1081,7 +1081,7 @@
         <entry key="43">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1097,8 +1097,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:34,&quot;orderNumber&quot;:&quot;ORD-1baa2ffa-45a1-4258-82b3-f85da0aa2fa5&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:22.678526&quot;}" />
-              <option name="time" value="2026-03-16 16:06:23" />
+              <option name="res" value="{&quot;id&quot;:78,&quot;orderNumber&quot;:&quot;ORD-14804df3-572f-40fb-9b91-507c5bc8e77a&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:07.921557&quot;}" />
+              <option name="time" value="2026-03-25 09:35:08" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1106,7 +1106,7 @@
         <entry key="44">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1122,8 +1122,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:35,&quot;orderNumber&quot;:&quot;ORD-e1bcec7a-ea91-4fbf-9ccc-0241ea2bee36&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:23.669335&quot;}" />
-              <option name="time" value="2026-03-16 16:06:23" />
+              <option name="res" value="{&quot;id&quot;:79,&quot;orderNumber&quot;:&quot;ORD-cf6f6c7d-f6b2-4b2e-bfb4-fa5fdb6152c2&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:08.320632&quot;}" />
+              <option name="time" value="2026-03-25 09:35:08" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1131,7 +1131,7 @@
         <entry key="45">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1147,8 +1147,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:36,&quot;orderNumber&quot;:&quot;ORD-a5e4280a-0b30-4348-8e2a-eb34e85ecb31&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:23.843237&quot;}" />
-              <option name="time" value="2026-03-16 16:06:24" />
+              <option name="res" value="{&quot;id&quot;:80,&quot;orderNumber&quot;:&quot;ORD-80b0af92-74bf-41d5-9ac6-32415a848dde&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:08.526536&quot;}" />
+              <option name="time" value="2026-03-25 09:35:09" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1156,7 +1156,7 @@
         <entry key="46">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1172,8 +1172,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:37,&quot;orderNumber&quot;:&quot;ORD-037459df-0803-4a3e-b08d-f5b1c37fc836&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:23.987248&quot;}" />
-              <option name="time" value="2026-03-16 16:06:24" />
+              <option name="res" value="{&quot;id&quot;:81,&quot;orderNumber&quot;:&quot;ORD-1472f024-ddf9-46b7-ad88-154853836723&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:08.715836&quot;}" />
+              <option name="time" value="2026-03-25 09:35:09" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1181,7 +1181,7 @@
         <entry key="47">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1197,8 +1197,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:38,&quot;orderNumber&quot;:&quot;ORD-0d173aa6-de87-4925-a9e7-fc5da7e1a176&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:39.280772&quot;}" />
-              <option name="time" value="2026-03-16 16:06:39" />
+              <option name="res" value="{&quot;id&quot;:82,&quot;orderNumber&quot;:&quot;ORD-cc7ffe35-d713-4b1a-8ce6-82699a7491bb&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:09.078418&quot;}" />
+              <option name="time" value="2026-03-25 09:35:09" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1206,7 +1206,7 @@
         <entry key="48">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
+              <option name="body" value="{&#10;  &quot;customerId&quot;: 2,&#10;  &quot;items&quot;: [&#10;    {&#10;      &quot;productId&quot;: 6,&#10;      &quot;quantity&quot;: 2&#10;    }&#10;  ]&#10;}" />
               <option name="contentType" value="application/json" />
               <option name="fileNames">
                 <array />
@@ -1222,8 +1222,8 @@
               <option name="params">
                 <map />
               </option>
-              <option name="res" value="{&quot;id&quot;:39,&quot;orderNumber&quot;:&quot;ORD-670597ea-dba9-4e46-bdf3-0d6645877141&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:39.542146&quot;}" />
-              <option name="time" value="2026-03-16 16:06:39" />
+              <option name="res" value="{&quot;id&quot;:83,&quot;orderNumber&quot;:&quot;ORD-1ca9f07b-814d-4c55-8c6e-9c87bab4f315&quot;,&quot;customerId&quot;:2,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:2000.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:6,&quot;productName&quot;:&quot;t phone&quot;,&quot;unitPrice&quot;:1000.00,&quot;quantity&quot;:2,&quot;subtotal&quot;:2000.00}],&quot;createdAt&quot;:&quot;2026-03-25T09:35:09.3161&quot;}" />
+              <option name="time" value="2026-03-25 09:35:10" />
               <option name="uri" value="/api/v1/orders" />
             </ReqHistory>
           </value>
@@ -1231,25 +1231,25 @@
         <entry key="49">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;customerId&quot;: 1,&#10;  &quot;items&quot;: [{ &quot;productId&quot;: 1, &quot;quantity&quot;: 1 }]&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
               <option name="host" value="http://127.0.0.1:8080" />
               <option name="id" value="49" />
-              <option name="method" value="POST" />
+              <option name="method" value="GET" />
               <option name="params">
-                <map />
+                <map>
+                  <entry key="id" value="4" />
+                </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:40,&quot;orderNumber&quot;:&quot;ORD-a5ab559f-3292-45f1-96cc-5fa030bfe788&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:39.679903&quot;}" />
-              <option name="time" value="2026-03-16 16:06:39" />
-              <option name="uri" value="/api/v1/orders" />
+              <option name="res" value="{&quot;id&quot;:4,&quot;orderNumber&quot;:&quot;ORD-a3501e04-4e1b-4575-8b47-7ed05447ed28&quot;,&quot;customerId&quot;:1,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;totalAmount&quot;:450.00,&quot;failureReason&quot;:null,&quot;items&quot;:[{&quot;productId&quot;:1,&quot;productName&quot;:&quot;rocket&quot;,&quot;unitPrice&quot;:450.00,&quot;quantity&quot;:1,&quot;subtotal&quot;:450.00}],&quot;createdAt&quot;:&quot;2026-03-16T16:06:01.333042&quot;}" />
+              <option name="time" value="2026-03-25 09:36:55" />
+              <option name="uri" value="/api/v1/orders/{id}" />
             </ReqHistory>
           </value>
         </entry>
@@ -1257,8 +1257,8 @@
     </option>
     <option name="point">
       <AtomicInteger>
-        <option name="opaque" value="38" />
-        <option name="plain" value="38" />
+        <option name="opaque" value="42" />
+        <option name="plain" value="42" />
       </AtomicInteger>
     </option>
   </component>

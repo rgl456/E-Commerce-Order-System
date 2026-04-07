@@ -1,0 +1,94 @@
+{
+  "realm": "microservices-realm",
+  "enabled": true,
+  "sslRequired": "none",
+
+  "roles": {
+    "realm": [
+      {
+        "name": "ROLE_CUSTOMER",
+        "description": "Regular customer — can place and view own orders"
+      },
+      {
+        "name": "ROLE_ADMIN",
+        "description": "Admin — full access to all resources"
+      },
+      {
+        "name": "ROLE_INVENTORY_MANAGER",
+        "description": "Can manage inventory but not orders"
+      }
+    ]
+  },
+
+  "users": [
+    {
+      "username": "alice",
+      "email": "alice@example.com",
+      "enabled": true,
+      "credentials": [{ "type": "password", "value": "alice123", "temporary": false }],
+      "realmRoles": ["ROLE_CUSTOMER"]
+    },
+    {
+      "username": "admin",
+      "email": "admin@example.com",
+      "enabled": true,
+      "credentials": [{ "type": "password", "value": "admin123", "temporary": false }],
+      "realmRoles": ["ROLE_ADMIN", "ROLE_CUSTOMER", "ROLE_INVENTORY_MANAGER"]
+    },
+    {
+      "username": "warehouse",
+      "email": "warehouse@example.com",
+      "enabled": true,
+      "credentials": [{ "type": "password", "value": "warehouse123", "temporary": false }],
+      "realmRoles": ["ROLE_INVENTORY_MANAGER"]
+    }
+  ],
+
+  "clients": [
+    {
+      "clientId": "api-gateway-client",
+      "name": "API Gateway",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "gateway-secret-key",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "publicClient": false,
+      "redirectUris": ["http://localhost:8080/*"],
+      "webOrigins": ["http://localhost:8080"]
+    },
+    {
+      "clientId": "order-service-client",
+      "name": "Order Service",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "order-service-secret",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "publicClient": false
+    },
+    {
+      "clientId": "inventory-service-client",
+      "name": "Inventory Service",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "inventory-service-secret",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "publicClient": false
+    },
+    {
+      "clientId": "product-service-client",
+      "name": "Product Service",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "product-service-secret",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "publicClient": false
+    }
+  ],
+
+  "protocolMappers": []
+
+}

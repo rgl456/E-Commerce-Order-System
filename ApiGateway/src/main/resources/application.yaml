@@ -45,6 +45,12 @@ spring:
                 # Identify clients by IP address
                 key-resolver: "#{@ipKeyResolver}"
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/microservices-realm
+
 resilience4j:
   circuitbreaker:
     instances:

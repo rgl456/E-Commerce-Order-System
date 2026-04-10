@@ -42,7 +42,7 @@ public class InventoryService {
         return mapToResponse(savedInventory);
     }
 
-    @Transactional(readOnly = true)
+    @Transactional(readOnly = false)
     public InventoryResponse getInventoryByProductId(Long productId) {
         Inventory inventory = inventoryRepository.findByProductId(productId)
                 .orElseThrow(() -> new InventoryNotFoundException(

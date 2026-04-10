@@ -27,10 +27,14 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable());
 
         http.authorizeExchange(auth -> auth
-                .pathMatchers("/fallback/**").permitAll()
-                .pathMatchers("/actuator/health").permitAll()
-                .pathMatchers(HttpMethod.GET, "/api/v1/products/**").authenticated()
-                .anyExchange().authenticated())
+                        .pathMatchers("/fallback/**").permitAll()
+                        .pathMatchers("/actuator/health").permitAll()
+                        .pathMatchers("/api/v1/products/**").authenticated()
+                        .pathMatchers("/api/v1/orders/**").hasAnyRole("CUSTOMER", "ADMIN")
+                        .pathMatchers("/api/v1/inventory/**").hasAnyRole("INVENTORY_MANAGER", "ADMIN")
+                        .pathMatchers("/api/v1/courses/**").authenticated()
+                        .pathMatchers("/api/v1/students/**").authenticated()
+                        .anyExchange().authenticated())
                 .oauth2ResourceServer(oauth -> oauth
                         .jwt(jwt -> jwt.jwtAuthenticationConverter(keycloakJwtConverter())));
         return http.build();

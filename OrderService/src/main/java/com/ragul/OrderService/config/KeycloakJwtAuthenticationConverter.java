@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 
 
 public class KeycloakJwtAuthenticationConverter implements Converter<Jwt, AbstractAuthenticationToken> {
+
     @Override
     public AbstractAuthenticationToken convert(Jwt jwt) {
         Collection<GrantedAuthority> authorities = extractRoles(jwt);
@@ -38,4 +39,5 @@ public class KeycloakJwtAuthenticationConverter implements Converter<Jwt, Abstra
                         role.startsWith("ROLE_") ? role : "ROLE_" + role)
                 ).collect(Collectors.toList());
     }
+
 }

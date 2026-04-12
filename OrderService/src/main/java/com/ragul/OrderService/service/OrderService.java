@@ -9,6 +9,7 @@ import com.ragul.OrderService.model.Order;
 import com.ragul.OrderService.model.OrderItem;
 import com.ragul.OrderService.model.OrderStatus;
 import com.ragul.OrderService.repository.OrderRepository;
+import com.ragul.OrderService.security.UserContext;
 import io.github.resilience4j.ratelimiter.RequestNotPermitted;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.micrometer.core.annotation.Timed;
@@ -23,7 +24,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.ragul.OrderService.mapper.OrderMapper.mapToResponse;
 
@@ -35,6 +35,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final ProductClient productClient;
     private final InventoryClient inventoryClient;
+    private final UserContext userContext;
 
 
     @Transactional
@@ -44,11 +45,19 @@ public class OrderService {
             lowCardinalityKeyValues = {"service", "order-service"})
     public OrderResponse createOrder(OrderRequest request) {
 
-        log.info("Creating order for customer {}", request.customerId());
+        Long customerId = request.customerId();
+
+        if(userContext.isCustomer() && !userContext.isAdmin()){
+            log.info("Customer {} creating order for themselves",
+                    userContext.getUserId());
+            customerId = extractCustomerId();
+        }
+
+        log.info("Creating order for customer {}", customerId);
 
         Order order = Order.builder()
                 .orderNumber("ORD-" + UUID.randomUUID())
-                .customerId(request.customerId())
+                .customerId(customerId)
                 .status(OrderStatus.PENDING)
                 .totalAmount(BigDecimal.ZERO)
                 .build();
@@ -123,7 +132,7 @@ public class OrderService {
 
         Order savedOrder = orderRepository.save(order);
 
-        log.info("Creating order for customer {}", request.customerId());
+        log.info("Creating order for customer {}", customerId);
 
         return mapToResponse(savedOrder);
     }
@@ -183,6 +192,21 @@ public class OrderService {
 
         order.setStatus(OrderStatus.CANCELLED);
         return mapToResponse(orderRepository.save(order));
+    }
+
+    @Transactional(readOnly = true)
+    public List<OrderResponse> getAllOrders() {
+        return orderRepository.findAll()
+                .stream()
+                .map(OrderMapper::mapToResponse)
+                .toList();
+    }
+
+    public Long extractCustomerId() {
+        String userId = userContext.getUserId();
+        if (userId == null) return 0L;
+        // user-service that maps Keycloak UUIDs to internal customer IDs
+        return (long) Math.abs(userId.hashCode() % 1000);
     }
 
 }

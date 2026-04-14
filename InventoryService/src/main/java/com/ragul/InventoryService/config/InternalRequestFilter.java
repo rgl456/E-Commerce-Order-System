@@ -1,4 +1,4 @@
-package com.ragul.OrderService.config;
+package com.ragul.InventoryService.config;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -44,8 +44,8 @@ public class InternalRequestFilter extends OncePerRequestFilter {
             }
 
             var authentication = new UsernamePasswordAuthenticationToken(
-              userId,
-              false,
+                    userId,
+                    false,
                     authorities
             );
 
@@ -58,3 +58,4 @@ public class InternalRequestFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 }
+

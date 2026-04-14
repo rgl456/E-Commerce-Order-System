@@ -1,11 +1,14 @@
 package com.ragul.OrderService.security;
 
+import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;
 
+import java.util.Arrays;
 import java.util.List;
 
 // @RequestScope means Spring creates ONE instance of this per HTTP request
@@ -13,47 +16,52 @@ import java.util.List;
 // thread safe
 @Component
 @RequestScope
+@Slf4j
 public class UserContext {
 
-    private Jwt jwt;
+    private static final String USER_ID_HEADER    = "X-User-Id";
+    private static final String USER_EMAIL_HEADER = "X-User-Email";
+    private static final String USER_ROLES_HEADER = "X-User-Roles";
 
-    public UserContext(){
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if(authentication != null && authentication.getPrincipal() instanceof Jwt){
-            this.jwt = (Jwt) authentication.getPrincipal();
-        }
-        else{
-            this.jwt = null;
-        }
+    private final String userId;
+    private final String userEmail;
+    private final List<String> roles;
+
+    public UserContext(HttpServletRequest request){
+        this.userId = getHeader(request, USER_ID_HEADER);
+        this.userEmail = getHeader(request, USER_EMAIL_HEADER);
+        String rolesHeader = getHeader(request, USER_ROLES_HEADER);
+
+        this.roles = rolesHeader.isEmpty() ? List.of() : Arrays.asList(rolesHeader.split(","));
+    }
+
+    private String getHeader(HttpServletRequest request, String name) {
+        String value = request.getHeader(name);
+        return value != null ? value.trim() : "";
     }
 
     public String getUserId(){
-        return jwt != null ? jwt.getSubject() : null;
+        return userId;
     }
 
     public String getEmail() {
-        return jwt != null
-                ? jwt.getClaimAsString("email")
-                : null;
+        return userEmail;
+    }
+
+    public List<String> getRoles(){
+        return roles;
     }
 
     public boolean isAdmin() {
-        return getRoles().contains("ROLE_ADMIN");
+        return roles.contains("ROLE_ADMIN");
     }
 
     public boolean isCustomer() {
-        return getRoles().contains("ROLE_CUSTOMER");
+        return roles.contains("ROLE_CUSTOMER");
     }
 
-    @SuppressWarnings("unchecked")
-    public List<String> getRoles() {
-        if (jwt == null) return List.of();
-
-        var realmAccess = jwt.getClaimAsMap("realm_access");
-        if (realmAccess == null) return List.of();
-
-        var roles = (List<String>) realmAccess.get("roles");
-        return roles != null ? roles : List.of();
+    public boolean isCurrentUser(String id) {
+        return userId != null && userId.equals(id);
     }
 
 }

@@ -12,9 +12,9 @@ eureka:
 
   security:
     oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8180/realms/microservices-realm
+#      resourceserver:
+#        jwt:
+#          issuer-uri: http://localhost:8180/realms/microservices-realm
       client:
         registration:
           order-service-client:

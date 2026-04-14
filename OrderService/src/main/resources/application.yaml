@@ -15,6 +15,16 @@ eureka:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8180/realms/microservices-realm
+      client:
+        registration:
+          order-service-client:
+            client-id: order-service-client
+            client-secret: M9bAzyog7ePDKCOExhIiW2Sp0BFUtodE
+            authorization-grant-type: client_credentials
+            scope: openid
+        provider:
+          order-service-client:
+            token-uri: http://localhost:8180/realms/microservices-realm/protocol/openid-connect/token
 
 resilience4j:
   circuitbreaker:
